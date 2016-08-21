@@ -6,5 +6,11 @@
     <bean id="person" class="com.bharath.spring.Person">
         <constructor-arg value="777" name="id" type="int"></constructor-arg>
         <constructor-arg value="Mary" name="name" type="java.lang.String" ></constructor-arg>
+        <property name="address" ref="address"/>
     </bean>
+    <bean id="address" class="com.bharath.spring.Address">
+        <constructor-arg name="street" value="river oaks parkway"/>
+        <constructor-arg name="postcode" value="95134"/>
+    </bean>
+
 </beans>
