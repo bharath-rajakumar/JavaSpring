@@ -6,6 +6,7 @@ package com.bharath.spring;
 public class Person {
     int id;
     String name;
+    Address address;
 
     public Person() {
 
@@ -20,11 +21,17 @@ public class Person {
         System.out.println("Hello I am person");
     }
 
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", address=" + address +
                 '}';
     }
 }
